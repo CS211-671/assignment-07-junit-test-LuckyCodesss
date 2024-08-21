@@ -23,4 +23,12 @@ class UserTest {
         boolean actual = user.validatePassword("plain-p@ssw0rd");
         assertTrue(actual);
     }
+
+    @Test
+    @DisplayName("Is username same")
+    public void testIsUsernameIsSame() {
+        User user = new User("fifa");
+        boolean s1 = user.isUsername("fifa");
+        assertTrue(s1);
+    }
 }
