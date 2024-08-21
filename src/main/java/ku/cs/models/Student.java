@@ -31,6 +31,10 @@ public class Student {
 
     public String grade()
     {
+        if (this.score >= 80) { return "A"; }
+        else if (this.score >= 60) { return "B"; }
+        else if (this.score >= 50) { return "C"; }
+        else if (this.score >= 40) { return "D"; }
         return "F";
     }
 
